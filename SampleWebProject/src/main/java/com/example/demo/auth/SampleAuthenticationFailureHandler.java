@@ -17,7 +17,7 @@ public class SampleAuthenticationFailureHandler implements AuthenticationFailure
 
 	/*
 	 * (非 Javadoc)
-	 * 
+	 *
 	 * @see
 	 * org.springframework.security.web.authentication.AuthenticationFailureHandler
 	 * #onAuthenticationFailure(javax.servlet.http.HttpServletRequest,

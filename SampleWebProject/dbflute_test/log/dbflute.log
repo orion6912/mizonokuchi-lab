@@ -1039,3 +1039,101 @@ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
     repsEnvType      = ut
     refreshProject   = $$AutoDetect$$
 _/_/_/_/_/_/_/_/_/_/ {Sql2Entity}
+2017-09-10 19:28:53,613 [main] INFO  (DfSql2EntityTask#begin():106) - +------------------------------------------+
+2017-09-10 19:28:53,618 [main] INFO  (DfSql2EntityTask#begin():107) - |                                          |
+2017-09-10 19:28:53,618 [main] INFO  (DfSql2EntityTask#begin():108) - |                Sql2Entity                |
+2017-09-10 19:28:53,618 [main] INFO  (DfSql2EntityTask#begin():109) - |                                          |
+2017-09-10 19:28:53,619 [main] INFO  (DfSql2EntityTask#begin():110) - +------------------------------------------+
+2017-09-10 19:28:53,646 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2017-09-10 19:28:53,647 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = org.postgresql.Driver
+2017-09-10 19:28:53,647 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:postgresql://35.194.219.12:5432/test
+2017-09-10 19:28:53,648 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = test
+2017-09-10 19:28:53,667 [main] INFO  (DfSql2EntityTask#setupControlTemplate():177) - 
+2017-09-10 19:28:53,667 [main] INFO  (DfSql2EntityTask#setupControlTemplate():178) - ...Using Java control: om/ControlSql2EntityJava.vm
+2017-09-10 19:28:53,679 [main] INFO  (DTDResolver#resolveEntity():195) - ...Resolving XML by database.dtd in same package
+2017-09-10 19:28:53,758 [main] INFO  (DfSqlFileFireMan#fire():64) - ...Firing: TUsersBhv_selectUserData.sql
+2017-09-10 19:28:53,772 [main] INFO  (DfDataSourceHandler#createConnection():166) - ...Connecting to database by data source:
+2017-09-10 19:28:54,169 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():233) -   product = PostgreSQL 9.6.1
+2017-09-10 19:28:54,170 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():234) -   driver  = PostgreSQL Native Driver PostgreSQL 9.4.1212.jre6 for JDBC 4.0
+2017-09-10 19:28:54,179 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():77) - ...Connecting to the schema
+2017-09-10 19:28:54,179 [main] INFO  (DfCurrentSchemaConnector#executeCurrentSchemaSql():78) - set search_path to public
+2017-09-10 19:28:54,243 [main] INFO  (DfOutsideSqlAnalyzer#traceSql():330) - SQL:
+/*
+ [df:title]
+  SQL title here.
+
+ [df:description]
+  SQL Description here.
+
+*/
+
+-- #df:entity#
+
+-- !df:pmb!
+-- !!AutoDetect!!
+
+select user_id, password
+  from t_users
+ /*BEGIN*/
+   /*IF pmb.user_id != null*/
+ where user_id =/*pmb.user_id*/'test'
+  /*END*/
+
+ /*END*/
+2017-09-10 19:28:54,511 [main] INFO  (DfOutsideSqlAnalyzer#traceResult():336) -  -> success=1 failure=0
+2017-09-10 19:28:54,512 [main] INFO  (DfSqlFileFireMan#fire():89) - {Fired SQL}: success=1 failure=0 (in 1 files)
+2017-09-10 19:28:54,565 [main] INFO  (DfSql2EntityTask#initControlContext():311) - 
+2017-09-10 19:28:54,566 [main] INFO  (DfSql2EntityTask#initControlContext():312) - ...Preparing generation of customize-entities and parameter-beans
+2017-09-10 19:28:54,566 [main] INFO  (DfSql2EntityTask#initControlContext():313) - * * * * * * * * * *
+2017-09-10 19:28:54,566 [main] INFO  (DfSql2EntityTask#initControlContext():314) - * CustomizeEntity *
+2017-09-10 19:28:54,567 [main] INFO  (DfSql2EntityTask#initControlContext():315) - * * * * * * * * * *
+2017-09-10 19:28:54,580 [main] INFO  (DfSql2EntityTask#showCustomizeEntity():927) - 
+UserData
+  user_id bpchar(50) related to t_users.user_id
+  password bpchar(100) related to t_users.password
+2017-09-10 19:28:54,582 [main] INFO  (DfSql2EntityTask#showParameterBean():932) - * * * * * * * * *
+2017-09-10 19:28:54,582 [main] INFO  (DfSql2EntityTask#showParameterBean():933) - * ParameterBean *
+2017-09-10 19:28:54,582 [main] INFO  (DfSql2EntityTask#showParameterBean():934) - * * * * * * * * *
+2017-09-10 19:28:54,583 [main] INFO  (DfSql2EntityTask#showParameterBean():976) - 
+UserDataPmb (typed to list, entity)
+  String user_id
+2017-09-10 19:28:54,591 [main] INFO  (DfAbstractTexenTask#fireVelocityProcess():253) - generator.parse("om/ControlSql2EntityJava.vm", ctx);
+2017-09-10 19:28:54,793 [main] INFO  (Database#doEnableSql2EntityOutputDirectory():1164) - ...Setting up sql2EntityOutputDirectory: ../src/main/java
+2017-09-10 19:28:54,796 [main] INFO  (DfOldClassHandler#info():1045) - public void deleteOldCustomizeClass() {
+2017-09-10 19:28:54,809 [main] INFO  (DfOldClassHandler#info():1045) - }
+2017-09-10 19:28:54,809 [main] INFO  (Database#info():2737) - public void parseCustomizeEntity() {
+2017-09-10 19:28:54,897 [main] INFO  (Database#info():2737) -     parse('UserData')
+2017-09-10 19:28:54,904 [main] INFO  (Database#info():2737) - }
+2017-09-10 19:28:54,905 [main] INFO  (Database#info():2737) - public void parseParameterBean() {
+2017-09-10 19:28:54,912 [main] INFO  (Database#info():2737) -     parse('UserDataPmb');
+2017-09-10 19:28:54,934 [main] INFO  (Database#info():2737) - }
+2017-09-10 19:28:54,961 [main] INFO  (DfSql2EntityTask#showTargetSqlFileInformation():303) - 
+/- - - - - - - - - - - - - - - - - - - - - - - -
+Target SQL files: 1
+
+  TUsersBhv_selectUserData.sql
+- - - - - - - - - -/
+2017-09-10 19:28:54,970 [main] INFO  (DfRefreshResourceProcess#show():299) - /===========================================================================
+2017-09-10 19:28:54,970 [main] INFO  (DfRefreshResourceProcess#show():299) - ...Refreshing [SampleWebProject] by http://localhost:8386/
+2017-09-10 19:28:55,038 [main] INFO  (DfRefreshResourceProcess#show():299) - ==========/
+2017-09-10 19:28:55,039 [main] INFO  (DfDataSourceHandler#destroy():120) - ...closeReally()
+2017-09-10 19:28:55,043 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():139) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m01s452ms
+
+  DBFLUTE_CLIENT: {test}
+    database  = postgresql (PostgreSQL 9.6.1)
+    language  = java
+    container = spring
+    package   = com.example.demo.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = org.postgresql.Driver
+    url    = jdbc:postgresql://35.194.219.12:5432/test
+    schema = {test.public as main}
+    user   = test
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = $$AutoDetect$$
+_/_/_/_/_/_/_/_/_/_/ {Sql2Entity}

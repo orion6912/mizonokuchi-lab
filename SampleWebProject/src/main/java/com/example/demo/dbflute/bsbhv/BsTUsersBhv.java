@@ -59,6 +59,8 @@ public abstract class BsTUsersBhv extends AbstractBehaviorWritable<TUsers, TUser
     //                                                                          Definition
     //                                                                          ==========
     /*df:beginQueryPath*/
+    /** SQL title here. */
+    public static final String PATH_selectUserData = "selectUserData";
     /*df:endQueryPath*/
 
     // ===================================================================================

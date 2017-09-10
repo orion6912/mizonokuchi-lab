@@ -17,12 +17,17 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
 	/*
 	 * (非 Javadoc)
-	 * 
+	 *
 	 * @see org.springframework.security.core.userdetails.UserDetailsService#
 	 * loadUserByUsername(java.lang.String)
 	 */
 	@Override
 	public UserDetails loadUserByUsername(String userId) throws UsernameNotFoundException {
+
+		// sqlを外読み用
+		//UserDataPmb pmb = new UserDataPmb();
+		//List<UserData> memberList
+        //= tUsersBhv.outsideSql().selectList(pmb);
 
 		// 認証を行うユーザー情報を格納する
 		TUsers user = null;

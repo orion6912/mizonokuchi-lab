@@ -458,3 +458,45 @@
 2017-09-10 18:41:43,471 - Velocimacro : Velocimacro : initialization complete.
 2017-09-10 18:41:43,471 - RuntimeInstance successfully initialized.
 2017-09-10 18:41:43,537 - ResourceManager : found om/ControlSql2EntityJava.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-09-10 19:28:54,603 - 
+2017-09-10 19:28:54,604 - DfFlutistLog4JLogSystem initialized using logfile './log/velocity.log'
+2017-09-10 19:28:54,604 - Initializing Velocity, Calling init()...
+2017-09-10 19:28:54,604 - *******************************************************************
+2017-09-10 19:28:54,604 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2017-09-10 19:28:54,604 - RuntimeInstance initializing.
+2017-09-10 19:28:54,604 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2017-09-10 19:28:54,604 - Trying to use logger class org.dbflute.friends.velocity.DfFlutistLog4JLogSystem
+2017-09-10 19:28:54,604 - Using logger class org.dbflute.friends.velocity.DfFlutistLog4JLogSystem
+2017-09-10 19:28:54,607 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2017-09-10 19:28:54,613 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-09-10 19:28:54,615 - FileResourceLoader : initialization starting.
+2017-09-10 19:28:54,615 - Do unicode file recognition:  false
+2017-09-10 19:28:54,615 - FileResourceLoader : adding path 'C:\Users\orion6912\git\mizonokuchi-lab\SampleWebProject\mydbflute\dbflute-1.1.4\templates'
+2017-09-10 19:28:54,615 - FileResourceLoader : initialization complete.
+2017-09-10 19:28:54,631 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2017-09-10 19:28:54,631 - Default ResourceManager initialization complete.
+2017-09-10 19:28:54,633 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2017-09-10 19:28:54,636 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2017-09-10 19:28:54,637 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2017-09-10 19:28:54,638 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2017-09-10 19:28:54,640 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2017-09-10 19:28:54,642 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2017-09-10 19:28:54,645 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2017-09-10 19:28:54,647 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2017-09-10 19:28:54,649 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2017-09-10 19:28:54,684 - Created '20' parsers.
+2017-09-10 19:28:54,699 - Velocimacro : initialization starting.
+2017-09-10 19:28:54,699 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2017-09-10 19:28:54,700 - Velocimacro : Default library not found.
+2017-09-10 19:28:54,700 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2017-09-10 19:28:54,700 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2017-09-10 19:28:54,700 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2017-09-10 19:28:54,700 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2017-09-10 19:28:54,700 - Velocimacro : Velocimacro : initialization complete.
+2017-09-10 19:28:54,700 - RuntimeInstance successfully initialized.
+2017-09-10 19:28:54,754 - ResourceManager : found om/ControlSql2EntityJava.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-09-10 19:28:54,860 - ResourceManager : found om/java/bsentity/BaseEntity.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-09-10 19:28:54,891 - ResourceManager : found om/java/bsentity/dbmeta/DBMetaImpl.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-09-10 19:28:54,902 - ResourceManager : found om/java/exentity/ExtendedEntity.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-09-10 19:28:54,925 - ResourceManager : found om/java/bsbhv/pmbean/BsParameterBean.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-09-10 19:28:54,934 - ResourceManager : found om/java/exbhv/pmbean/ExParameterBean.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
