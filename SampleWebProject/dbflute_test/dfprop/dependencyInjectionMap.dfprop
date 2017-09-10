@@ -36,7 +36,7 @@ map:{
     #  The file name of DBFlute DI configuration for Spring and Lucy.
     #
     # @SpringOnly
-    #; dbfluteBeansFileName = dbfluteBeans.xml
+    ; dbfluteBeansFileName = dbfluteBeans.xml
     # - - - - - - - - - -/
 
     # /- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -60,7 +60,7 @@ map:{
     #  Does it generate JavaConfig for DBFluteBeans? (not use XML configuration)
     #
     # @SpringOnly
-    #; isDBFluteBeansGeneratedAsJavaConfig = false
+    ; isDBFluteBeansGeneratedAsJavaConfig = true
     # - - - - - - - - - -/
 
     # /- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -68,7 +68,7 @@ map:{
     #  The package name(output directory) of DBFlute DI configuration for Spring and Lucy.
     #
     # @SpringOnly
-    #; dbfluteBeansPackageName = ../resources
+    ; dbfluteBeansPackageName = ../src/main/resources
     # - - - - - - - - - -/
 
     # ====================================================================================
