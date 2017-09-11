@@ -1,4 +1,4 @@
-package com.example.demo.auth;
+package com.example.demo.security;
 
 import java.io.IOException;
 
@@ -29,13 +29,11 @@ public class SampleAuthenticationFailureHandler implements AuthenticationFailure
 			AuthenticationException authenticationException) throws IOException, ServletException {
 
 		String errorId = "";
-		// ExceptionからエラーIDをセットする
 		if (authenticationException instanceof BadCredentialsException) {
 			errorId = "";
 		}
 
 		// ログイン画面にリダイレクトする
-		httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/"
-				+ httpServletRequest.getParameter("identifier") + "/index?error=" + errorId);
+		httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/login?error=" + errorId);
 	}
 }
