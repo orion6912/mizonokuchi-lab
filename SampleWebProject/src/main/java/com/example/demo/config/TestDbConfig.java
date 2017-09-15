@@ -1,7 +1,5 @@
 package com.example.demo.config;
 
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.Properties;
 import javax.sql.DataSource;
 import org.apache.commons.dbcp.BasicDataSource;
