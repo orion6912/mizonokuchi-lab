@@ -15,6 +15,7 @@ import com.example.demo.entity.LoginUser;
 @Service
 public class UserService implements UserDetailsService {
 
+	@Autowired
 	private PasswordEncoder passwordEncoder;
 
 	@Autowired
