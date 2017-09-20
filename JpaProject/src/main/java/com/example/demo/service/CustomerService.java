@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,8 +20,8 @@ public class CustomerService {
 		return result;
 	}
 	
-	public List<Customer> findByName(String name) {
-		List<Customer> result = repository.findByNameContainsOrderByIdAsc(name);
+	public Optional<Customer> findById(Integer id) {
+		Optional<Customer> result = repository.findById(id);
 		return result;
 	}
 }

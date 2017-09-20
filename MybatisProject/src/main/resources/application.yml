@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:datajpa
+    username: sa
+    password: null
+    driverClassName: org.h2.Driver
+mybatis:
+  mapper-locations: "classpath*:**/repository/*Repository.xml"
