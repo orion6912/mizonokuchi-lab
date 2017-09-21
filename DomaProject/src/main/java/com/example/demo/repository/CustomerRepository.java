@@ -14,4 +14,7 @@ public interface CustomerRepository {
 
 	@Select
 	List<Customer> selectAll();
+	
+	@Select
+	Customer selectById(Integer id);
 }

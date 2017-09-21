@@ -19,4 +19,8 @@ public class CustomerService {
 	public List<Customer> getCustomers() {
 		return customerRepository.selectAll();
 	}
+	
+	public Customer getCustomer(Integer id) {
+		return customerRepository.selectById(id);
+	}
 }
